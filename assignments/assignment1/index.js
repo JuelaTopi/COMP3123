@@ -117,7 +117,13 @@ async function startServer() {
   }
 }
 
-if (require.main === module) {
+if (process.env.VERCEL) {
+  connectDB().catch((error) => {
+    logger.error("MongoDB connection error", {
+      message: error.message
+    });
+  });
+} else if (require.main === module) {
   startServer();
 }
 
