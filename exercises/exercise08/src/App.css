@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 1100px;
+  margin: 12px auto;
+  padding: 0 12px;
+  color: #212529;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  padding: 16px 12px 8px;
+  border: 3px solid green;
+  border-bottom: 0;
+  font-size: clamp(30px, 5vw, 48px);
+}
+
+form {
+  display: grid;
+  gap: 18px;
+  padding: 12px 14px 16px;
+  border: 3px solid green;
+  border-top: 0;
+}
+
+form > div {
+  display: flex;
+  gap: 12px;
+}
+
+form label {
+  flex: 1;
+  min-width: 0;
+}
+
+form input:not([type="checkbox"]),
+form select {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px 12px;
+  border: 1px solid #adb5bd;
+  border-radius: 4px;
+  background: white;
+  color: inherit;
+  font: inherit;
+}
+
+form input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+form button {
+  justify-self: center;
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 5px;
+  background: #218838;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+}
+
+main table {
+  margin: 16px auto;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+main th,
+main td {
+  padding: 5px 10px;
+}
+
+@media (max-width: 600px) {
+  form > div {
+    flex-direction: column;
+  }
+
+  main td {
+    overflow-wrap: anywhere;
+  }
+}
