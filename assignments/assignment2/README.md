@@ -47,8 +47,8 @@ Install Docker Desktop, Node.js and Git.
 Clone the submission repository.
 
 ```bash
-git clone https://github.com/JuelaTopi/101087887_comp3123_assignment2_reactjs.git
-cd 101087887_comp3123_assignment2_reactjs
+git clone https://github.com/JuelaTopi/COMP3123.git
+cd COMP3123/assignments/assignment2
 ```
 
 Copy the configuration example.
